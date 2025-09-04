@@ -55,9 +55,9 @@ We faced a number of manufacturing challenges, particularly with the FDM-printed
 
 ---
 
-* `report.pdf`: The full research internship report detailing the project.
+* `report.pdf`: The full research internship report detailing the project (just on request!)
 * `data_analysis_script.py`: The Python script used to reslice images and calculate activity concentration.
-* `phantom_designs/`: Folder containing the STL files for the spherical phantoms.
+* `phantom_designs/`: Folder containing the STL files for the spherical phantoms (just on request!)
 
 ## ✅ Conclusion
 
