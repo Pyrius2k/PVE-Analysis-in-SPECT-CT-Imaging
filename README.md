@@ -28,10 +28,13 @@ The project followed a structured approach, from phantom manufacturing to quanti
 * We used a custom Python script for data processing. This script registered (resliced) the functional SPECT images to the anatomical CT images, ensuring that both datasets were perfectly aligned.
 * The script then calculated the total activity and volume within segmented regions of interest, allowing us to determine the activity concentration and, subsequently, the **Recovery Coefficient (RC)** for each phantom.
 
-![CT Image](https://github.com/Pyrius2k/PVE-Analysis-in-SPECT-CT-Imaging/blob/main/ctpic.png)
-<br>
-![SPECT Image](https://github.com/Pyrius2k/PVE-Analysis-in-SPECT-CT-Imaging/blob/main/spectpic.png)
-
+<p align="center">
+  <img src="ctpic.png" alt="CT Image" width="300"/>
+  <img src="spectpic.png" alt="SPECT Image" width="300"/>
+</p>
+<p align="center">
+  <em>CT vs. SPECT images of the phantom</em>
+</p>
 
 ## 📈 Key Findings
 
@@ -43,7 +46,11 @@ Our results showed a clear, expected correlation:
 
 The data also showed that the background activity level significantly impacts the measured RC values.
 
-![Recovery Coefficient vs. SA:V Graph](https://github.com/Pyrius2k/PVE-Analysis-in-SPECT-CT-Imaging/blob/main/graph.png)
+<p align="center">
+  <img src="graph.png" alt="Recovery Coefficient vs SA:V" width="500"/>
+  <br>
+  <em>Figure: Recovery Coefficient decreases as SA:V ratio increases</em>
+</p>
 
 ## 💬 Discussion & Challenges
 
@@ -53,14 +60,28 @@ We faced a number of manufacturing challenges, particularly with the FDM-printed
 
 ## 📁 Repository Contents
 
----
+| File | Description |
+|------|-------------|
+| `README.md` | Main project documentation |
+| `SPECT CT Matrix Converter and Readout (RH).ipynb` | Jupyter Notebook for matrix conversion and image readout |
+| `ctpic.png` | Example CT image of phantom |
+| `spectpic.png` | Example SPECT image of phantom |
+| `graph.png` | Recovery Coefficient vs SA:V plot |
+| `report.pdf` | Full internship report (available upon request) |
+| `data_analysis_script.py` | Python script for reslicing images and RC calculation |
+| `phantom_designs/` | STL files for spherical phantoms (available upon request) |
 
-* `report.pdf`: The full research internship report detailing the project (just on request!)
-* `data_analysis_script.py`: The Python script used to reslice images and calculate activity concentration.
-* `phantom_designs/`: Folder containing the STL files for the spherical phantoms (just on request!)
 
 ## ✅ Conclusion
 
 ---
 
 This work confirms a strong relationship between the **surface area-to-volume ratio** and the **Partial Volume Effect**. By understanding and quantifying this effect, we can work toward improving PVE correction algorithms, which will lead to more accurate activity measurements and, ultimately, better image quality for diagnosis and therapy in nuclear medicine.
+
+## Background & Related Work
+
+📄 [![Shape-Independent Recovery](https://img.shields.io/badge/Shape--Independent%20Recovery-blue?style=for-the-badge)](https://pubmed.ncbi.nlm.nih.gov/37236207/)
+
+📄 [![Model-Based RC Curve](https://img.shields.io/badge/Model--Based%20RC%20Curve-green?style=for-the-badge)](https://www.physicamedica.com/article/S1120-1797(23)01202-4/fulltext)
+
+
