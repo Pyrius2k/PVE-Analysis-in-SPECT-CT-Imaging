@@ -21,7 +21,7 @@ The project followed a structured approach, from phantom manufacturing to quanti
 * To ensure watertightness and a smooth surface, the FDM-printed phantoms were post-processed through sanding and an epoxy resin coating.
 
 ### Measurement & Data Acquisition
-* The phantoms were filled with a known activity of the **Technetium-99m ($^{99m}$Tc)** radioisotope.
+* The phantoms were filled with a known activity of the **Technetium-99m** radioisotope.
 * Measurements were conducted using a **SPECT/CT camera**, with multiple runs at different background activity levels to simulate real-world conditions (20:1, 10:1, and 5:1 activity ratios, as well as a no-background control).
 
 ### Data Processing & Analysis
