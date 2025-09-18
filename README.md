@@ -20,6 +20,13 @@ The project followed a structured approach, from phantom manufacturing to quanti
 * We designed and 3D-printed 10 hollow spherical phantoms with varying SA:V ratios using both **Fused Deposition Modeling (FDM)** and **Stereolithography (SLA)** techniques.
 * To ensure watertightness and a smooth surface, the FDM-printed phantoms were post-processed through sanding and an epoxy resin coating.
 
+<p align="center">
+  <img src="spheres.png" alt="3D-printed spheres" width="300"/>
+</p>
+<p align="center">
+  <em>Figure: 3D-printed hollow spheres with different Surface Area to Volume ratios</em>
+</p>
+
 ### Measurement & Data Acquisition
 * The phantoms were filled with a known activity of the **Technetium-99m** radioisotope.
 * Measurements were conducted using a **SPECT/CT camera**, with multiple runs at different background activity levels to simulate real-world conditions (20:1, 10:1, and 5:1 activity ratios, as well as a no-background control).
