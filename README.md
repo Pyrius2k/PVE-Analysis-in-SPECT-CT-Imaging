@@ -21,26 +21,32 @@ The project followed a structured approach, from phantom manufacturing to quanti
 * To ensure watertightness and a smooth surface, the FDM-printed phantoms were post-processed through sanding and an epoxy resin coating.
 
 <p align="center">
-  <img src="spheres.png" alt="3D-printed spheres" width="300"/>
+  <img src="spheres.png" alt="3D-printed spheres" width="300"/>
 </p>
 <p align="center">
-  <em>Figure: 3D-printed hollow spheres with different Surface Area to Volume ratios</em>
+  <em>Figure: 3D-printed hollow spheres with different Surface Area to Volume ratios</em>
 </p>
 
 ### Measurement & Data Acquisition
 * The phantoms were filled with a known activity of the **Technetium-99m** radioisotope.
 * Measurements were conducted using a **SPECT/CT camera**, with multiple runs at different background activity levels to simulate real-world conditions (20:1, 10:1, and 5:1 activity ratios, as well as a no-background control).
 
+<p align="center">
+  <img src="spectct.jpg" alt="SPECT CT setup" width="350"/>
+  <br>
+  <em>Figure: Siemens SPECT/CT camera setup showing the container (water-filled) with five spheres placed inside for measurement.</em>
+</p>
+
 ### Data Processing & Analysis
 * We used a custom Python script for data processing. This script registered (resliced) the functional SPECT images to the anatomical CT images, ensuring that both datasets were perfectly aligned.
 * The script then calculated the total activity and volume within segmented regions of interest, allowing us to determine the activity concentration and, subsequently, the **Recovery Coefficient (RC)** for each phantom.
 
 <p align="center">
-  <img src="ctpic.png" alt="CT Image" width="300"/>
-  <img src="spectpic.png" alt="SPECT Image" width="300"/>
+  <img src="ctpic.png" alt="CT Image" width="300"/>
+  <img src="spectpic.png" alt="SPECT Image" width="300"/>
 </p>
 <p align="center">
-  <em>CT vs. SPECT images of the phantom</em>
+  <em>CT vs. SPECT images of the phantom</em>
 </p>
 
 ## 📈 Key Findings
@@ -54,9 +60,9 @@ Our results showed a clear, expected correlation:
 The data also showed that the background activity level significantly impacts the measured RC values.
 
 <p align="center">
-  <img src="graph.png" alt="Recovery Coefficient vs SA:V" width="500"/>
-  <br>
-  <em>Figure: Recovery Coefficient decreases as SA:V ratio increases</em>
+  <img src="graph.png" alt="Recovery Coefficient vs SA:V" width="500"/>
+  <br>
+  <em>Figure: Recovery Coefficient decreases as SA:V ratio increases</em>
 </p>
 
 ## 💬 Discussion & Challenges
@@ -73,6 +79,7 @@ We faced a number of manufacturing challenges, particularly with the FDM-printed
 | `SPECT CT Matrix Converter and Readout (RH).ipynb` | Jupyter Notebook for matrix conversion and image readout |
 | `ctpic.png` | Example CT image of phantom |
 | `spectpic.png` | Example SPECT image of phantom |
+| `spectct.jpg` | Photo of the Siemens SPECT/CT measurement setup |
 | `graph.png` | Recovery Coefficient vs SA:V plot |
 | `report.pdf` | Full internship report (available upon request) |
 | `data_analysis_script.py` | Python script for reslicing images and RC calculation |
@@ -90,5 +97,3 @@ This work confirms a strong relationship between the **surface area-to-volume ra
 📄 [![Shape-Independent Recovery](https://img.shields.io/badge/Shape--Independent%20Recovery-blue?style=for-the-badge)](https://pubmed.ncbi.nlm.nih.gov/37236207/)
 
 📄 [![Model-Based RC Curve](https://img.shields.io/badge/Model--Based%20RC%20Curve-green?style=for-the-badge)](https://www.physicamedica.com/article/S1120-1797(23)01202-4/fulltext)
-
-
